@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Image</string>
+    <string name="welcome">Welcome To QMaster</string>
+    <string name="signup">Sign Up</string>
+    <string name="signin">Sign In</string>
+    <string name="aptitude">Quantitative Aptitude</string>
+    <string name="verbal">Verbal Reasoning</string>
+    <string name="technical">Technical &amp; Domain Skills</string>
+    <string name="logical">Logical Reasoning</string>
+    <string name="topics">Topics</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_contests">Contests</string>
+    <string name="title_notifications">Notification</string>
+    <string name="title_profile">Profile</string>
+
+    <string name="have_account">Don\'t have an account? </string>
+    <string name="sign_up">Sign up</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="password_hint">Password</string>
+    <string name="email_hint">Email</string>
+    <string name="welcome_to_lco">Welcome to QMaster</string>
+    <string name="sign_in_to_continue">Sign In to Continue</string>
+    <string name="google_login">Google Login</string>
+    <string name="facebook_login">Facebook Login</string>
+    <string name="twitter_login">Twitter Login</string>
+    <string name="github_login">Github Login</string>
+    <string name="full_name">Full Name</string>
+    <string name="sign_up_now">Sign Up</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="sign_up_to_unlock_impossibility">Sign Up to unlock the Impossibility</string>
+    <string name="sign_in">Sign In</string>
+    <string name="login_successful">Login Successful</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
