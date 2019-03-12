@@ -64,7 +64,7 @@ public class Dashboard extends AppCompatActivity implements  BottomNavigationVie
             BottomNavigationViewHelper.disableShiftMode(navigation);
             navigation.setOnNavigationItemSelectedListener(this);
 
-            dalSignUp  = DalSignUp.getInstance();
+            //dalSignUp  = DalSignUp.getInstance();
 
         }catch (Exception e){
 

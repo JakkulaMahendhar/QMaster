@@ -54,6 +54,10 @@ public class SignInActivity extends AppCompatActivity implements View.OnClickLis
                 Upassword = sign_in_password.getText().toString().trim();
                 checkUser(Uemail, Upassword);
                 break;
+            case R.id.signUp:
+                Intent intent = new Intent(SignInActivity.this,SignUpActivity.class);
+                startActivity(intent);
+                break;
 
         }
     }
@@ -70,18 +74,17 @@ public class SignInActivity extends AppCompatActivity implements View.OnClickLis
                     String password_decompressed = Utils.decompress(cursor.getString(cursor.getColumnIndex("Password")));
                     if (password.equals(password_decompressed)) {
                         Toast.makeText(getApplicationContext(), "Login Successful", Toast.LENGTH_SHORT).show();
-                        Intent intentProduct = new Intent(SignInActivity.this,HomeFragment.class);
+                        Intent intentProduct = new Intent(SignInActivity.this, HomeFragment.class);
                         Bundle bundle = new Bundle();
-                        bundle.putString("name",userName);
-                       bundle.putString("email",userEmail);
-                       ProfileFragment Fragment = new ProfileFragment();
-                       Fragment.setArguments(bundle);
+                        bundle.putString("name", userName);
+                        bundle.putString("email", userEmail);
+                        ProfileFragment Fragment = new ProfileFragment();
+                        Fragment.setArguments(bundle);
                         loadFragment(Fragment);
-                    }
-                    else{
+                    } else {
                         Toast.makeText(getApplicationContext(), "Incorrect Credentials Error", Toast.LENGTH_SHORT).show();
                     }
-                }else{
+                } else {
                     Toast.makeText(getApplicationContext(), "User Does Not Exist ", Toast.LENGTH_SHORT).show();
                 }
             }
@@ -95,7 +98,7 @@ public class SignInActivity extends AppCompatActivity implements View.OnClickLis
         if (fragment != null) {
             getSupportFragmentManager()
                     .beginTransaction()
-                    .replace(R.id.login_fragment_container,fragment)
+                    .replace(R.id.login_fragment_container, fragment)
                     .commit();
             return true;
         }
