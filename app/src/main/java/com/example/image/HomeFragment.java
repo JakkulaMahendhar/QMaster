@@ -1,26 +1,23 @@
 package com.example.image;
 
-import android.app.AlertDialog;
-import android.content.Context;
+
 import android.content.Intent;
 import android.graphics.Typeface;
-import android.net.Uri;
+
 import android.os.Bundle;
-import android.os.Handler;
+
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
+
 import android.widget.TextView;
-import android.widget.Toast;
 
 
 public class HomeFragment extends Fragment implements View.OnClickListener {
 
-    boolean doublebackpressed = false;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,7 +30,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         try {
             view = inflater.inflate(R.layout.fragment_home, container, false);
             TextView tv_welcome, tv_topics, tv_aptitude, tv_logical, tv_verbal, tv_technical;
-            Button btn_signup,btn_signIn;
+            Button btn_signup, btn_signIn;
 
             Typeface typeface = Typeface.createFromAsset(getActivity().getAssets(), "akshar.ttf");
             tv_welcome = (TextView) view.findViewById(R.id.tv_welcome);
@@ -64,21 +61,18 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
     }
 
 
-
     @Override
     public void onClick(View view) {
         try {
             switch (view.getId()) {
 
                 case R.id.btn_signUp:
-                    Intent i = new Intent(getActivity(),SignUpActivity.class);
+                    Intent i = new Intent(getActivity(), SignUpActivity.class);
                     startActivity(i);
-
-                    //signUpDialog(view);
                     break;
 
                 case R.id.btn_signIn:
-                    Intent signIn = new Intent(getActivity(),SignInActivity.class);
+                    Intent signIn = new Intent(getActivity(), SignInActivity.class);
                     startActivity(signIn);
             }
         } catch (Exception e) {

@@ -10,19 +10,7 @@ public class DalSignUp {
 
     ArrayList<UserDo> arrayList;
 
-    /*private static DalSignUp dalSignUp = new DalSignUp();
-
-    private DalSignUp() {
-
-    }
-
-   public static DalSignUp getInstance(){
-        return dalSignUp;
-    }*/
-
     public boolean insertSignUpDetails(String fullname, String email, String password, BaseDB db) {
-
-
 
         boolean result = false;
         try {

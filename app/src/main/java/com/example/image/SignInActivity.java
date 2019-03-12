@@ -74,7 +74,6 @@ public class SignInActivity extends AppCompatActivity implements View.OnClickLis
                     String password_decompressed = Utils.decompress(cursor.getString(cursor.getColumnIndex("Password")));
                     if (password.equals(password_decompressed)) {
                         Toast.makeText(getApplicationContext(), "Login Successful", Toast.LENGTH_SHORT).show();
-                        Intent intentProduct = new Intent(SignInActivity.this, HomeFragment.class);
                         Bundle bundle = new Bundle();
                         bundle.putString("name", userName);
                         bundle.putString("email", userEmail);

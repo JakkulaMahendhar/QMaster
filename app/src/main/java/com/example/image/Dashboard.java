@@ -1,40 +1,21 @@
 package com.example.image;
 
 import android.Manifest;
-import android.annotation.SuppressLint;
-import android.app.AlertDialog;
-import android.app.Dialog;
-import android.content.Context;
-import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.graphics.Typeface;
-import android.net.Uri;
 import android.os.Handler;
 import android.support.annotation.NonNull;
-import android.support.design.internal.BottomNavigationItemView;
-import android.support.design.internal.BottomNavigationMenuView;
 import android.support.design.widget.BottomNavigationView;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import net.sqlcipher.database.SQLiteDatabase;
 
-import java.lang.reflect.Field;
-
-public class Dashboard extends AppCompatActivity implements  BottomNavigationView.OnNavigationItemSelectedListener{
+public class Dashboard extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
 
     boolean doubleBackToExitPressedOnce = false;
     RelativeLayout relativeLayout;
@@ -48,6 +29,7 @@ public class Dashboard extends AppCompatActivity implements  BottomNavigationVie
 
     BaseDB db;
     DalSignUp dalSignUp = null;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         try {
@@ -56,7 +38,7 @@ public class Dashboard extends AppCompatActivity implements  BottomNavigationVie
             checkPermissions();
             ((QMaster) getApplication()).setAppDirectorypath();
             ((QMaster) getApplication()).setBaseDb(new BaseDB(Dashboard.this));
-            db = ((QMaster)getApplication()).getBaseDb();
+            db = ((QMaster) getApplication()).getBaseDb();
             relativeLayout = (RelativeLayout) findViewById(R.id.container);
             loadFragment(new HomeFragment());
 
@@ -64,9 +46,7 @@ public class Dashboard extends AppCompatActivity implements  BottomNavigationVie
             BottomNavigationViewHelper.disableShiftMode(navigation);
             navigation.setOnNavigationItemSelectedListener(this);
 
-            //dalSignUp  = DalSignUp.getInstance();
-
-        }catch (Exception e){
+        } catch (Exception e) {
 
             e.printStackTrace();
         }
@@ -111,12 +91,13 @@ public class Dashboard extends AppCompatActivity implements  BottomNavigationVie
         if (fragment != null) {
             getSupportFragmentManager()
                     .beginTransaction()
-                   .replace(R.id.fragment_container,fragment)
+                    .replace(R.id.fragment_container, fragment)
                     .commit();
             return true;
         }
         return false;
     }
+
     @Override
     public void onBackPressed() {
         if (doubleBackToExitPressedOnce) {
@@ -130,7 +111,7 @@ public class Dashboard extends AppCompatActivity implements  BottomNavigationVie
 
             @Override
             public void run() {
-                doubleBackToExitPressedOnce=false;
+                doubleBackToExitPressedOnce = false;
             }
         }, 3000);
     }
@@ -154,22 +135,17 @@ public class Dashboard extends AppCompatActivity implements  BottomNavigationVie
                     fragment = new ContestFragment();
                     break;
 
-                case R.id.navigation_notifications:
-                    fragment = new NotificationFragment();
-                    break;
-
                 case R.id.navigation_profile:
                     fragment = new ProfileFragment();
                     break;
             }
 
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
         return loadFragment(fragment);
 
     }
-
 
 
 }

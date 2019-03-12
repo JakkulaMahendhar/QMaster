@@ -34,7 +34,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginTop="23dp"
+                    android:layout_marginTop="@dimen/_23sdp"
                     android:src="@drawable/male_user_48px" />
 
                 <TextView
@@ -44,7 +44,7 @@
                     android:layout_below="@id/img_profilePhoto"
                     android:layout_centerHorizontal="true"
                     android:text="Mahendhar Jakkula"
-                    android:textSize="20sp"
+                    android:textSize="@dimen/_16sdp"
                     android:textStyle="bold" />
 
             </RelativeLayout>
@@ -61,9 +61,10 @@
 
             <ImageView
                 android:id="@+id/img_scoreBoard"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_marginLeft="8dp"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_gravity="center"
                 android:background="@drawable/report_card_50px"
                 android:backgroundTint="#3EB397" />
 
@@ -75,7 +76,7 @@
                 android:layout_marginLeft="10dp"
                 android:text="Score Board"
                 android:textColor="#323436"
-                android:textSize="23sp" />
+                android:textSize="@dimen/_18sdp" />
 
 
         </LinearLayout>
@@ -94,25 +95,25 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_margin="12dp"
+            android:layout_margin="@dimen/_12sdp"
             card_view:cardBackgroundColor="#3EB397"
-            card_view:cardCornerRadius="25dp"
-            card_view:cardElevation="6dp">
+            card_view:cardCornerRadius="@dimen/_15sdp"
+            card_view:cardElevation="@dimen/_6sdp">
 
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp">
+                android:layout_marginBottom="@dimen/_5sdp">
 
                 <TextView
                     android:id="@+id/tv_aptitude"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="25dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
                     android:text="@string/aptitude"
-                    android:textSize="21sp"
+                    android:textSize="@dimen/_16sdp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -120,19 +121,19 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/tv_aptitude"
-                    android:layout_marginLeft="25dp"
+                    android:layout_marginLeft="@dimen/_20sdp"
                     android:layout_marginTop="10dp"
-                    android:text="Total Marks     :  50"
-                    android:textSize="18sp" />
+                    android:text="@string/totalscore"
+                    android:textSize="@dimen/_13sdp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/tv_total_Marks"
-                    android:layout_marginLeft="25dp"
+                    android:layout_marginLeft="@dimen/_20sdp"
                     android:layout_marginTop="10dp"
-                    android:text="Marks Scored  :  35"
-                    android:textSize="18sp" />
+                    android:text="@string/marksScored"
+                    android:textSize="@dimen/_13sdp" />
 
             </RelativeLayout>
 
@@ -144,10 +145,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_margin="12dp"
+            android:layout_margin="@dimen/_12sdp"
             card_view:cardBackgroundColor="#3EB397"
-            card_view:cardCornerRadius="25dp"
-            card_view:cardElevation="6dp">
+            card_view:cardCornerRadius="@dimen/_15sdp"
+            card_view:cardElevation="@dimen/_6sdp">
 
 
             <RelativeLayout
@@ -159,10 +160,10 @@
                     android:id="@+id/tv_logical"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="25dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
                     android:text="@string/logical"
-                    android:textSize="21sp"
+                    android:textSize="@dimen/_16sdp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -170,19 +171,19 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/tv_logical"
-                    android:layout_marginLeft="25dp"
-                    android:layout_marginTop="10dp"
-                    android:text="Total Marks     :  50"
-                    android:textSize="18sp" />
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/totalscore"
+                    android:textSize="@dimen/_13sdp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/tv_total_Marks2"
-                    android:layout_marginLeft="25dp"
-                    android:layout_marginTop="10dp"
-                    android:text="Marks Scored  :  45"
-                    android:textSize="18sp" />
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/marksScored"
+                    android:textSize="@dimen/_13sdp" />
 
             </RelativeLayout>
 
@@ -193,10 +194,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_margin="12dp"
+            android:layout_margin="@dimen/_12sdp"
             card_view:cardBackgroundColor="#3EB397"
-            card_view:cardCornerRadius="25dp"
-            card_view:cardElevation="6dp">
+            card_view:cardCornerRadius="@dimen/_15sdp"
+            card_view:cardElevation="@dimen/_6sdp">
 
 
             <RelativeLayout
@@ -208,10 +209,10 @@
                     android:id="@+id/tv_verbal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="25dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
                     android:text="@string/verbal"
-                    android:textSize="21sp"
+                    android:textSize="@dimen/_16sdp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -219,19 +220,19 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/tv_verbal"
-                    android:layout_marginLeft="25dp"
-                    android:layout_marginTop="10dp"
-                    android:text="Total Marks     :  50"
-                    android:textSize="18sp" />
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/totalscore"
+                    android:textSize="@dimen/_13sdp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/tv_total_Marks3"
-                    android:layout_marginLeft="25dp"
-                    android:layout_marginTop="10dp"
-                    android:text="Marks Scored  :  30"
-                    android:textSize="18sp" />
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/marksScored"
+                    android:textSize="@dimen/_13sdp" />
 
             </RelativeLayout>
 

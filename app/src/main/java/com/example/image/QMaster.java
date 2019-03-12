@@ -23,7 +23,7 @@ public class QMaster extends Application {
             StrictMode.VmPolicy.Builder builder = new StrictMode.VmPolicy.Builder();
             StrictMode.setVmPolicy(builder.build());
         }
-//        MultiDex.install(this);
+
         SQLiteDatabase.loadLibs(this);
         Thread.setDefaultUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() {
 
@@ -33,8 +33,7 @@ public class QMaster extends Application {
                 System.exit(0);
             }
         });
-//        setAppDirectorypath();
-//        AndroidUtils.createLogFile(this);
+
     }
 
     public BaseDB getBaseDb() {

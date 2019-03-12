@@ -23,32 +23,26 @@
             android:id="@+id/app_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="@dimen/_5sdp"
             android:gravity="center"
             android:text="QMaster"
             android:textColor="#3EB397"
-            android:textSize="35sp"
+            android:textSize="@dimen/_30sdp"
             android:textStyle="bold" />
 
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/animation_view"
-            android:layout_width="120dp"
-            android:layout_height="60dp"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_50sdp"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_12sdp"
             app:lottie_autoPlay="true"
             app:lottie_fileName="animation_w.json"
             app:lottie_loop="true" />
 
-        <!-- <ProgressBar
-             android:id="@+id/progressBar"
-             style="@android:style/Widget.ProgressBar.Horizontal"
-             android:layout_width="match_parent"
-             android:layout_height="wrap_content"
-             android:indeterminate="true" />-->
     </LinearLayout>
 
 

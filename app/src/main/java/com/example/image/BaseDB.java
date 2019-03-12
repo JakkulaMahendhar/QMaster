@@ -19,7 +19,6 @@ public class BaseDB {
     File path = null;
     public BaseDB(Context c) {
         try {
-           // path = Environment.getExternalStorageDirectory();
             File file = new File(Constants.ROOTDIRECTORYPATH + "/" + Constants.DATABASE_DIRECTORY + "/"+ Constants.DATABASE_NAME);
             if (!file.exists()) {
                 createDataBase(c);
@@ -63,7 +62,6 @@ public class BaseDB {
             res = db.insert(tableName, null, newtaskValues);
         } catch (Exception e) {
             e.printStackTrace();
-           // AndroidUtils.logMessage("BaseDB.insertRecord(): " + tableName + "" + e.getMessage());
         }
         return res;
     }
@@ -87,7 +85,6 @@ public class BaseDB {
             }
             c = db.rawQuery(s, null);
         } catch (Exception e) {
-           // AndroidUtils.logMessage("BaseDB.getRawQuery():-" + e.getMessage());
             e.printStackTrace();
         }
         return c;

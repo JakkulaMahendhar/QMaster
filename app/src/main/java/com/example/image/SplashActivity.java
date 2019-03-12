@@ -15,32 +15,12 @@ import java.util.TimerTask;
 
 public class SplashActivity extends AppCompatActivity {
 
-   /* ProgressBar progressBar = null;
-    Timer progressTimer = null;
-    int i = 0;
-    TimerTask r = new TimerTask() {
-        @Override
-        public void run() {
-            i = (i + 10) % 101;
-            if (i == 100) {
-                progressBar.setProgress(i);
-                progressTimer.cancel();
-                finish();
-            }
-            progressBar.setProgress(i);
-        }
-    };
-*/
     private static int SPLASH_TIME_OUT = 3000;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         try {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_splash);
-
-           /* progressTimer = new Timer();
-            progressBar = (ProgressBar) findViewById(R.id.progressBar);
-            progressTimer.scheduleAtFixedRate(r, 0, 500);*/
 
             Typeface typeface = Typeface.createFromAsset(getAssets(), "akshar.ttf");
 

@@ -27,8 +27,8 @@
 
             <ImageView
                 android:id="@+id/imageView2"
-                android:layout_width="180dp"
-                android:layout_height="80dp"
+                android:layout_width="@dimen/_140sdp"
+                android:layout_height="@dimen/_50sdp"
                 android:layout_gravity="center"
                 />
 
@@ -38,7 +38,7 @@
                 android:layout_gravity="center"
                 android:text="@string/welcome_to_lco"
                 android:textColor="#2C3335"
-                android:textSize="22sp"
+                android:textSize="@dimen/_15sdp"
                 android:textStyle="bold" />
 
             <LinearLayout
@@ -57,7 +57,7 @@
                         android:id="@+id/sign_up_name"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="4dp"
+                        android:layout_margin="@dimen/_4sdp"
                         android:ems="10"
                         android:hint="@string/full_name"
                         android:inputType="textPersonName"
@@ -74,7 +74,7 @@
                         android:id="@+id/sign_up_email"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="4dp"
+                        android:layout_margin="@dimen/_4sdp"
                         android:ems="10"
                         android:hint="@string/email_hint"
                         android:inputType="textEmailAddress"
@@ -93,7 +93,7 @@
                         android:id="@+id/sign_up_password"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="4dp"
+                        android:layout_margin="@dimen/_4sdp"
                         android:ems="10"
                         android:hint="@string/password_hint"
                         android:inputType="textPassword"
@@ -103,7 +103,7 @@
 
                 <Button
                     android:id="@+id/signUp"
-                    android:layout_width="280dp"
+                    android:layout_width="@dimen/_150sdp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="8dp"
@@ -112,14 +112,14 @@
                     android:padding="18dp"
                     android:text="@string/sign_up"
                     android:textColor="#000000"
-                    android:textSize="16sp" />
+                    android:textSize="@dimen/_12sdp" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="@dimen/_10sdp"
                 android:gravity="center"
                 android:orientation="horizontal">
 
@@ -129,10 +129,10 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:gravity="center_horizontal"
-                    android:padding="3dp"
+                    android:padding="@dimen/_3sdp"
                     android:text="@string/already_have_an_account"
                     android:textColor="#000000"
-                    android:textSize="18sp" />
+                    android:textSize="@dimen/_15sdp" />
 
                 <TextView
                     android:id="@+id/signIn"
@@ -140,10 +140,10 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:gravity="center_horizontal"
-                    android:padding="6dp"
+                    android:padding="@dimen/_4sdp"
                     android:text="@string/sign_in"
                     android:textColor="#218F76"
-                    android:textSize="18sp"
+                    android:textSize="@dimen/_15sdp"
                     android:textStyle="bold" />
 
             </LinearLayout>
