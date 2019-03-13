@@ -47,7 +47,7 @@
                 android:layout_marginTop="@dimen/_10sdp"
                 android:background="@drawable/radius_for_bar"
                 android:text="@string/signup"
-                android:textSize="@dimen/_12sdp"
+                android:textSize="@dimen/_10sdp"
                 android:textAllCaps="false" />
 
             <Button
@@ -60,7 +60,7 @@
                 android:layout_toRightOf="@id/btn_signUp"
                 android:background="@drawable/radius_for_bar"
                 android:text="@string/signin"
-                android:textSize="@dimen/_12sdp"
+                android:textSize="@dimen/_10sdp"
                 android:textAllCaps="false" />
 
         </RelativeLayout>
@@ -98,7 +98,7 @@
                 android:layout_toRightOf="@id/imageView"
                 android:text="@string/topics"
                 android:textColor="#3EB397"
-                android:textSize="@dimen/_22sdp"
+                android:textSize="@dimen/_18sdp"
                 android:textStyle="bold" />
 
         </LinearLayout>
@@ -106,13 +106,12 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="0"
             android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_25sdp">
+                android:layout_marginTop="@dimen/_6sdp">
 
 
                 <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
@@ -138,7 +137,7 @@
                             android:gravity="center"
                             android:padding="@dimen/_10sdp"
                             android:text="@string/aptitude"
-                            android:textSize="@dimen/_16sdp"
+                            android:textSize="@dimen/_15sdp"
                             android:textStyle="bold" />
 
                     </LinearLayout>
@@ -169,7 +168,7 @@
                             android:gravity="center"
                             android:padding="@dimen/_10sdp"
                             android:text="@string/logical"
-                            android:textSize="@dimen/_16sdp"
+                            android:textSize="@dimen/_15sdp"
                             android:textStyle="bold" />
 
 
@@ -219,7 +218,7 @@
                             android:gravity="center"
                             android:padding="@dimen/_10sdp"
                             android:text="@string/verbal"
-                            android:textSize="@dimen/_16sdp"
+                            android:textSize="@dimen/_15sdp"
                             android:textStyle="bold" />
 
                     </LinearLayout>
@@ -250,7 +249,7 @@
                             android:gravity="center"
                             android:padding="@dimen/_10sdp"
                             android:text="@string/technical"
-                            android:textSize="@dimen/_16sdp"
+                            android:textSize="@dimen/_15sdp"
                             android:textStyle="bold" />
 
 

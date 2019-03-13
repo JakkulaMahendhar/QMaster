@@ -34,7 +34,10 @@
     <string name="login_successful">Login Successful</string>
     <string name="totalscore">Total Marks&#160;&#160;&#160;&#160;&#160;:&#160;50</string>
     <string name="marksScored">Marks Scored&#160;&#160;:&#160;50</string>
-
+    <string name="expand">Expand</string>
+    <string name="collapse">Collapse</string>
+    <string name="content">Licensed under the Apache License, Version 2.0 (the "License");
+     </string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

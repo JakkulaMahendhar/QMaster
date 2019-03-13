@@ -56,7 +56,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:padding="10dp">
+            android:padding="5dp">
 
 
             <ImageView
@@ -76,7 +76,7 @@
                 android:layout_marginLeft="10dp"
                 android:text="Score Board"
                 android:textColor="#323436"
-                android:textSize="@dimen/_18sdp" />
+                android:textSize="@dimen/_16sdp" />
 
 
         </LinearLayout>
@@ -95,7 +95,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_margin="@dimen/_12sdp"
+            android:layout_margin="@dimen/_8sdp"
             card_view:cardBackgroundColor="#3EB397"
             card_view:cardCornerRadius="@dimen/_15sdp"
             card_view:cardElevation="@dimen/_6sdp">
@@ -104,7 +104,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/_5sdp">
+                android:layout_marginBottom="@dimen/_2sdp">
 
                 <TextView
                     android:id="@+id/tv_aptitude"
@@ -122,7 +122,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/tv_aptitude"
                     android:layout_marginLeft="@dimen/_20sdp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="@dimen/_5sdp"
                     android:text="@string/totalscore"
                     android:textSize="@dimen/_13sdp" />
 
@@ -131,7 +131,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/tv_total_Marks"
                     android:layout_marginLeft="@dimen/_20sdp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="@dimen/_5sdp"
                     android:text="@string/marksScored"
                     android:textSize="@dimen/_13sdp" />
 
@@ -141,11 +141,13 @@
         </android.support.v7.widget.CardView>
 
 
-        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_margin="@dimen/_12sdp"
+            android:layout_margin="@dimen/_8sdp"
             card_view:cardBackgroundColor="#3EB397"
             card_view:cardCornerRadius="@dimen/_15sdp"
             card_view:cardElevation="@dimen/_6sdp">
@@ -154,7 +156,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp">
+                android:layout_marginBottom="@dimen/_2sdp">
 
                 <TextView
                     android:id="@+id/tv_logical"
@@ -172,7 +174,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/tv_logical"
                     android:layout_marginLeft="@dimen/_20sdp"
-                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
                     android:text="@string/totalscore"
                     android:textSize="@dimen/_13sdp" />
 
@@ -181,7 +183,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/tv_total_Marks2"
                     android:layout_marginLeft="@dimen/_20sdp"
-                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
                     android:text="@string/marksScored"
                     android:textSize="@dimen/_13sdp" />
 
@@ -221,7 +223,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/tv_verbal"
                     android:layout_marginLeft="@dimen/_20sdp"
-                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
                     android:text="@string/totalscore"
                     android:textSize="@dimen/_13sdp" />
 
@@ -230,7 +232,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/tv_total_Marks3"
                     android:layout_marginLeft="@dimen/_20sdp"
-                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
                     android:text="@string/marksScored"
                     android:textSize="@dimen/_13sdp" />
 
