@@ -1,4 +1,8 @@
 # QMaster
+# Lottie Animations
+# Sqlite Db With Password
+# Logcat Files 
+# Latest Material Design 
 
  Splash Screen             |           Sign Up         |   Login
 :-------------------------:|:-------------------------:|:-----------------------------------:
