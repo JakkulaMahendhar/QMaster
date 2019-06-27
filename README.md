@@ -1,6 +1,6 @@
 # QMaster
 # Lottie Animations
-# Sqlite Db With Password
+# Local Sqlite Db With Encrypted Password 
 # Logcat Files 
 # Latest Material Design 
 
